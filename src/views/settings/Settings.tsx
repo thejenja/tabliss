@@ -56,7 +56,7 @@ const Settings: React.FC = () => {
             } catch (error) {
               alert(
                 `Invalid import file: ${
-                  error instanceof Error ? error.message : "Uknown error"
+                  error instanceof Error ? error.message : "Unknown error"
                 }`,
               );
             }
@@ -93,7 +93,11 @@ const Settings: React.FC = () => {
         <Persist />
 
         <div style={{ textAlign: "center" }} className="Widget">
-          <h4>Support Tabliss</h4>
+          <h4><FormattedMessage
+          id="support"
+          defaultMessage="Support Tabliss"
+          description="Support title"
+        /></h4>
           <p>
             <a
               href="https://www.paypal.com/donate/?hosted_button_id=FK7VRWS9A2EW4"
@@ -102,12 +106,20 @@ const Settings: React.FC = () => {
               className="button button--primary"
               title="I do love coffee"
             >
-              <Icon name="coffee" /> Donate a coffee 😍
+              <Icon name="coffee" /> <FormattedMessage
+          id="donateCoffee"
+          defaultMessage="Donate a coffee"
+          description="Donate a coffee title"
+        /> 😍
             </a>
           </p>
           <p>
             <a href="https://tabliss.io/" target="_blank">
-              <Icon name="globe" /> Website
+              <Icon name="globe" /> <FormattedMessage
+          id="website"
+          defaultMessage="Website"
+          description="Website title"
+        />
             </a>
             &nbsp;&nbsp;
             <a
