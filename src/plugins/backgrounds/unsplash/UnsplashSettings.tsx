@@ -31,27 +31,27 @@ const UnsplashSettings: React.FC<Props> = ({ data = defaultData, setData }) => (
           description="Every new tab title"
         /></option>
         <option value="300"><FormattedMessage
-          id="backgrounds.unsplash.every5min"
+          id="plugins.every5min"
           defaultMessage="Every 5 minutes"
           description="Every 5 minutes< title"
         /></option>
         <option value="900"><FormattedMessage
-          id="backgrounds.unsplash.every15min"
+          id="plugins.every15min"
           defaultMessage="Every 15 minutes"
           description="Every 15 minutes title"
         /></option>
         <option value="3600"><FormattedMessage
-          id="backgrounds.unsplash.everyHour"
+          id="plugins.everyHour"
           defaultMessage="Every hour"
           description="Every hour title"
         /></option>
         <option value="86400"><FormattedMessage
-          id="backgrounds.unsplash.everyDay"
+          id="plugins.everyDay"
           defaultMessage="Every day"
           description="Every day title"
         /></option>
         <option value="604800"><FormattedMessage
-          id="backgrounds.unsplash.everyWeek"
+          id="plugins.everyWeek"
           defaultMessage="Every week"
           description="Every week title"
         /></option>

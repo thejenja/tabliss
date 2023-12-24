@@ -6,10 +6,10 @@ import TimeZoneInput from "../../../views/shared/timeZone/TimeZoneInput";
 const TimeSettings: FC<Props> = ({ data = defaultData, setData }) => (
   <div className="TimeSettings">
     <label>
-    <FormattedMessage
-          id="plugins.time.name"
+      <FormattedMessage
+          id="plugins.name"
           defaultMessage="Name"
-          description="Name time title"
+          description="Name title"
         />
       <input
         type="text"
@@ -20,12 +20,11 @@ const TimeSettings: FC<Props> = ({ data = defaultData, setData }) => (
     </label>
 
     <label>
-    <FormattedMessage
+      <FormattedMessage
           id="plugins.time.zone"
           defaultMessage="Time Zone"
           description="Time Zone title"
         />
-      
       <TimeZoneInput
         timeZone={data.timeZone}
         onChange={(timeZone) => setData({ ...data, timeZone })}
@@ -41,9 +40,8 @@ const TimeSettings: FC<Props> = ({ data = defaultData, setData }) => (
       <FormattedMessage
           id="plugins.time.analogue"
           defaultMessage="Analogue"
-          description="Analogue time title"
+          description="Analogue title"
         />
-      
     </label>
 
     <label>
@@ -57,7 +55,6 @@ const TimeSettings: FC<Props> = ({ data = defaultData, setData }) => (
           defaultMessage="12-hour digital"
           description="12-hour digital title"
         />
-      
     </label>
 
     <label>
@@ -84,7 +81,6 @@ const TimeSettings: FC<Props> = ({ data = defaultData, setData }) => (
           defaultMessage="Display seconds"
           description="Display seconds title"
         />
-      
     </label>
 
     <label>
@@ -114,7 +110,6 @@ const TimeSettings: FC<Props> = ({ data = defaultData, setData }) => (
           defaultMessage="Display day period"
           description="Display day period title"
         />
-        
       </label>
     )}
 
@@ -129,7 +124,6 @@ const TimeSettings: FC<Props> = ({ data = defaultData, setData }) => (
           defaultMessage="Display date"
           description="Display date title"
         />
-      
     </label>
   </div>
 );
